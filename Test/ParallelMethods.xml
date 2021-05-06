@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Diff_Environments" parallel="methods" thread-count="4" verbose="10" >
+
+    <parameter name="browser" value="Chrome"></parameter>
+    <test name="OnChrome">
+        <parameter name="browser" value="Chrome"></parameter>
+        <classes>
+            <class name="TestHome3"></class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Diff_Environments" >
+    <parameter name="browser" value="Chrome"></parameter>
+    <test name="OnChrome">
+        <parameter name="browser" value="Chrome"></parameter>
+        <classes>
+            <class name="TestHome2"></class>
+        </classes>
+    </test>
+    <test name="OnFireFox">
+        <parameter name="browser" value="FireFox"></parameter>
+        <classes>
+            <class name="TestHome2"></class>
+        </classes>
+    </test>
+
+</suite>
